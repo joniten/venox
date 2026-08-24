@@ -113,7 +113,7 @@ orders.forEach((order, index) => {
 }};
 
 ctx.reply(message);
-});
+}
 
 bot.launch();
 
