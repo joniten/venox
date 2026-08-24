@@ -30,7 +30,7 @@ app.post('/api/order', (req, res) => {
             success: false
         });
     }
-});
+
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Сервер замовлень запущено на порту 3000");
