@@ -112,6 +112,8 @@ orders.forEach((order, index) => {
     '🕐 Дата: ' + order.createdAt + '\n\n';
 });
 
+} 
+
 ctx.reply(message);
 });
 
