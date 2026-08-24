@@ -110,9 +110,7 @@ orders.forEach((order, index) => {
     '💳 Оплата: ' + order.payment + '\n' +
     '💰 Статус: ' + order.paymentStatus + '\n' +
     '🕐 Дата: ' + order.createdAt + '\n\n';
-});
-
-} 
+};
 
 ctx.reply(message);
 });
