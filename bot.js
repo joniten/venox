@@ -32,8 +32,9 @@ app.post('/api/order', (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Сервер замовлень запущено на порту 3000');
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Сервер замовлень запущено на порту 3000");
+});
 });
 const ORDERS_FILE = path.join(__dirname, 'orders.json');
 function saveOrder(order) {
