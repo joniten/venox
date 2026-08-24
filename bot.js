@@ -35,7 +35,6 @@ app.post('/api/order', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log("Сервер замовлень запущено на порту 3000");
 });
-});
 const ORDERS_FILE = path.join(__dirname, 'orders.json');
 function saveOrder(order) {
   const orders = JSON.parse(fs.readFileSync(ORDERS_FILE, 'utf8'));
