@@ -29,7 +29,7 @@ app.post('/api/order', (req, res) => {
         res.status(500).json({
             success: false
         });
-    }
+    });
 
 
 app.listen(process.env.PORT || 3000, () => {
