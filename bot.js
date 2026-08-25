@@ -31,7 +31,7 @@ bot.command('admin', (ctx) => { if (!isAdmin(ctx)) { return ctx.reply('⛔️ Д
 ctx.reply('👑 Ви адміністратор VENOX Shop.'); });
 const menu = Markup.keyboard([ ['🛍 Каталог'], ['📦 Мої замовлення', '🔎 Пошук товару'], ['📞 Підтримка'] ]).resize();
 bot.start((ctx) => { ctx.reply( 'Вітаємо у VENOX Shop! 🛍\n\nОберіть потрібний розділ:', menu ); });
-bot.command('myid', (ctx) => { ctx.reply(Твій Telegram ID: ${ctx.from.id}); });
+bot.command('myid', (ctx) => { ctx.reply('Твій Telegram ID: ${ctx.from.id}'); });
 bot.command('orders', (ctx) => { if (!isAdmin(ctx)) { return ctx.reply('⛔️ Доступ заборонено.'); }
 const orders = JSON.parse( fs.readFileSync(ORDERS_FILE, 'utf8') );
 if (orders.length === 0) { return ctx.reply('📦 Замовлень поки немає.'); }
