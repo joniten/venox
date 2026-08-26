@@ -2683,3 +2683,50 @@ html {
         padding: 15px 18px;
     }
 }
+
+/* Юридична інформація */
+.legal-info {
+  padding: 70px 20px;
+  background: #080808;
+  color: #ffffff;
+}
+
+.legal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.legal-info h2 {
+  text-align: center;
+  color: #39ff14;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.legal-block {
+  margin-bottom: 30px;
+  padding: 25px;
+  border: 1px solid rgba(57, 255, 20, 0.25);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.legal-block h3 {
+  color: #39ff14;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.legal-block p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.legal-block ul {
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.legal-block li {
+  margin-bottom: 5px;
+}
