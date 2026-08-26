@@ -89,7 +89,7 @@
         </div>
 
         <div class="hero-image">    
-             <img src="vgr.jpg" alt="VGR V-059">
+             <img src="images/vgr.jpg" alt="VGR V-059">
 
         </div>
 
@@ -120,7 +120,7 @@
     <div class="smoke smoke-2"></div>
     <div class="smoke smoke-3"></div>
 
-    <img src="vgr3.png" alt="VGR">
+    <img src="images/vgr3.png" alt="VGR">
 </div>
     </div>
 
@@ -158,7 +158,7 @@
             </div>
 
             <div class="why-image">
-                <img src="vgr.jpg" alt="">
+                <img src="images/vgr.jpg" alt="">
             </div>
 
             <div class="why-column">
@@ -199,7 +199,7 @@
 
     <!-- ЗОБРАЖЕННЯ -->
     <div class="specs-image">
-      <img src="vgr4.jpg" alt="VGR V-059">
+      <img src="images/vgr4.jpg" alt="VGR V-059">
     </div>
 
     <!-- ТАБЛИЦЯ ХАРАКТЕРИСТИК -->
@@ -285,7 +285,7 @@
         <div class="package-content">
 
             <div class="package-image">
-                <img src="vgr5.jpg" alt="Комплектація VGR V-059">
+                <img src="images/vgr5.jpg" alt="Комплектація VGR V-059">
             </div>
 
             <div class="package-list">
@@ -339,27 +339,27 @@
     <div class="gallery-grid">
 
         <div class="gallery-item big">
-            <img src="vgr.jpg" alt="">
+            <img src="images/vgr.jpg" alt="">
         </div>
 
         <div class="gallery-item big">
-            <img src="vgr4.jpg" alt="">
+            <img src="images/vgr4.jpg" alt="">
         </div>
 
         <div class="gallery-item">
-            <img src="vrg12.jpg" alt="">
+            <img src="images/vrg12.jpg" alt="">
         </div>
 
         <div class="gallery-item">
-            <img src="vgr5.jpg" alt="">
+            <img src="images/vgr5.jpg" alt="">
         </div>
 
         <div class="gallery-item">
-            <img src="vgr44.jpg" alt="">
+            <img src="images/vgr44.jpg" alt="">
         </div>
 
         <div class="gallery-item">
-            <img src="vgr55.jpg" alt="">
+            <img src="images/vgr55.jpg" alt="">
         </div>
 
     </div>
@@ -528,7 +528,69 @@ function addReview() {
         </form>
     </div>
 </section>
-
+<!-- Юридична інформація та умови -->
+<section class="legal-info" id="legal-info">
+  <div class="legal-container">
+    <h2>Інформація для покупців</h2>
+    <div class="legal-block">
+      <h3>Правила та умови</h3>
+      <p>
+        Оформлюючи замовлення на сайті VENOX, покупець підтверджує,
+        що ознайомився з інформацією про товар, його характеристиками,
+        вартістю, умовами оплати та доставки.
+      </p>
+      <p>
+        Замовлення оформлюється після надання покупцем необхідної
+        контактної інформації та підтвердження замовлення продавцем.
+      </p>
+    </div>
+    <div class="legal-block">
+      <h3>Оплата та доставка</h3>
+      <p>
+        Доставка замовлень здійснюється службами <strong>Нова пошта</strong>
+        та <strong>Укрпошта</strong>.
+      </p>
+      <p>
+        Відправлення замовлення здійснюється протягом
+        <strong>1–3 робочих днів</strong> після підтвердження замовлення.
+      </p>
+      <p>
+        Доступні способи оплати:
+      </p>
+      <ul>
+        <li>оплата банківською карткою через WayForPay;</li>
+        <li>накладений платіж при отриманні.</li>
+      </ul>
+    </div>
+    <div class="legal-block">
+      <h3>Повернення та обмін</h3>
+      <p>
+        Повернення та обмін товару здійснюються відповідно до
+        чинного законодавства України.
+      </p>
+      <p>
+        Для оформлення повернення або обміну покупець може звернутися
+        до продавця за контактними даними, зазначеними на цьому сайті.
+      </p>
+      <p>
+        Повернення коштів здійснюється після отримання та перевірки
+        товару продавцем у випадках, передбачених законодавством України.
+      </p>
+    </div>
+    <div class="legal-block">
+      <h3>Контактна інформація продавця</h3>
+      <p><strong>Продавець:</strong> ФОП Баталін Сергій Іванович</p>
+      <p><strong>РНОКПП:</strong> 3841800679</p>
+      <p>
+        <strong>Адреса реєстрації:</strong>
+        Україна, Одеська область, Березівський район,
+        с. Петрівка, вул. Миру, буд. 17
+      </p>
+      <p><strong>Телефон:</strong> +380 63 956 53 16</p>
+      <p><strong>Email:</strong> joniten54@icloud.com</p>
+    </div>
+  </div>
+</section>
 <script>
 
 const orderForm = document.querySelector(".order-form");
@@ -555,7 +617,7 @@ orderForm.addEventListener("submit", async function(event) {
         .trim() || "Невідомий товар";
 
     try {
-        const response = await fetch("https://venox-api-new.onrender.com/api/order", {
+        const response = await fetch("http://localhost:3000/api/order", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
